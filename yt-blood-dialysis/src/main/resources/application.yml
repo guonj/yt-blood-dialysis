@@ -1,0 +1,13 @@
+spring: 
+  application:  #寰湇鍔″悕绉�
+    name: slup-resource 
+  datasource:   #鏁版嵁婧愪俊鎭�
+    url: jdbc:mysql://10.7.131.14:3306/slup_resource?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    username: slup1
+    password: GSwDFz6@
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+    mapper-locations: classpath:com/slup/rs/mapper/*.xml
+
+server: 
+  port: 8888

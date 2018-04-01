@@ -1,0 +1,7 @@
+com\yt\tarsdata\model\TSlupHotBo.class
+com\yt\tarsdata\controller\ProposalHotController.class
+com\yt\tarsdata\service\ProposalHotService.class
+com\yt\tarsdata\serviceImpl\ProposalHotServiceImpl.class
+com\yt\tarsdata\HsApplication.class
+com\yt\tarsdata\model\TSlupHot.class
+com\yt\tarsdata\mapper\TSlupHotMapper.class

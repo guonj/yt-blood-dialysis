@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yt.tarsdata.mapper.TSlupHotMapper">
+  <resultMap id="BaseResultMap" type="com.yt.tarsdata.model.TSlupHot">
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="propagate" jdbcType="VARCHAR" property="propagate" />
+    <result column="planPicUrl" jdbcType="VARCHAR" property="planPicUrl" />
+    <result column="planUrl" jdbcType="VARCHAR" property="planUrl" />
+    <result column="mark" jdbcType="VARCHAR" property="mark" />
+  </resultMap>
+  
+  <select id="findByMark" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select title,propagate,planPicUrl,planUrl,mark from t_slup_hot u where u.mark = #{mark,jdbcType=VARCHAR} and now() BETWEEN u.startTime and u.endTime
+  </select>
+  
+</mapper>
